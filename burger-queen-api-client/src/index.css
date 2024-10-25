@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Esto no afecta directamente el body, pero es buena práctica */
+  min-width: 320px; /* Este es el mínimo que debe tener tu pantalla */
+  min-height: 100vh;
+  background-color: #202522;
+}

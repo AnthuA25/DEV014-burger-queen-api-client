@@ -1,0 +1,160 @@
+.dashboard {
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
+}
+.section-left {
+  width: 60%;
+  color: white;
+  overflow-y: auto;
+  height: 100vh;
+}
+.section-left::-webkit-scrollbar {
+  width: 2px;
+}
+.section-left::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.section-left::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.list-products {
+  text-align: center;
+}
+.navbar-products {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.button-nav button {
+  font-family: "Inria Serif", serif;
+  font-style: normal;
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+.button-nav {
+  border-bottom: 1px solid white;
+}
+.product-image {
+  width: 50px;
+  height: 50px;
+}
+.product-table {
+  width: 100%;
+  padding: 40px;
+}
+.product-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.product-table th {
+  background-color: rgba(255, 255, 255, 0.06);
+  font-weight: bold;
+}
+
+.add-product {
+  cursor: pointer;
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  /* border: 2px solid green; */
+  background-color: #32352c;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.clock-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+}
+.clock-icon {
+  width: 50px;
+  height: 50px;
+}
+.table-order {
+  border: 2px solid green;
+  width: 100%;
+}
+.list-price {
+  width: 100%;
+  /* border: 2px solid green; */
+  border-collapse: collapse;
+}
+
+.list-price th:first-child {
+  text-align: start;
+}
+.list-price th:not(:first-child) {
+  text-align: center;
+}
+.list-price thead {
+  border-bottom: 1px solid white;
+}
+.list-price tbody {
+  border-bottom: 1px solid white;
+}
+.list-price td,
+.list-price th {
+  width: auto; /* Ajuste de las celdas */
+}
+
+.list-price td:first-child {
+  text-align: start;
+}
+.list-price td:not(:first-child) {
+  text-align: center;
+}
+.list-price td {
+  vertical-align: middle;
+  padding: 10px;
+  border: none;
+}
+.quantity-control {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.remove-quantity,
+.add-quantity {
+  cursor: pointer;
+  margin: 0 5px; /* Espaciado entre los íconos */
+  font-size: 1.5rem; /* Ajusta el tamaño del ícono si es necesario */
+}
+.no-Products {
+  text-align: center !important;
+  color: rgba(255, 255, 255, 0.55);
+  font-style: italic;
+}
+
+.submit-order {
+  background-color: #76684f;
+  border: none;
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 1rem;
+}
